@@ -1,0 +1,22 @@
+{
+  "name": "hash_generator",
+  "version": "0.0.1",
+  "description": "A password hash generator",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Joe Hill",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "colors": "^1.1.2",
+    "mocha": "^3.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  }
+}

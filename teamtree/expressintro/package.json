@@ -1,0 +1,11 @@
+{
+  "name": "expressintro",
+  "version": "0.0.1",
+  "description": "Introduction to using Express.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Hill",
+  "license": "MIT"
+}

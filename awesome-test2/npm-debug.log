@@ -1,0 +1,204 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ejs',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.3
+3 info using node@v6.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData ejs@*
+8 silly fetchNamedPackageData ejs
+9 silly mapToRegistry name ejs
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'ejs',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'ejs',
+12 silly mapToRegistry   name: 'ejs',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/ejs
+14 verbose request uri https://registry.npmjs.org/ejs
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:44:13 PM
+17 verbose request id bee391bc3e4bf7df
+18 verbose etag "ANTLXWS6XOK4KOYD2B38LU12L"
+19 http request GET https://registry.npmjs.org/ejs
+20 http 304 https://registry.npmjs.org/ejs
+21 verbose headers { date: 'Sun, 25 Sep 2016 03:44:13 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"ANTLXWS6XOK4KOYD2B38LU12L"',
+21 verbose headers   age: '33',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-iad2642-IAD',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1474775053.369600,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Sun, 25 Sep 2016 03:44:13 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"ANTLXWS6XOK4KOYD2B38LU12L"',
+22 silly get     age: '33',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-iad2642-IAD',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1474775053.369600,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/ejs from cache
+24 verbose get saving ejs to /Users/joseph.hill/.npm/registry.npmjs.org/ejs/.cache.json
+25 verbose correctMkdir /Users/joseph.hill/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule ejs@2.5.2 checking installable status
+39 silly cache add args [ 'ejs@*', null ]
+40 verbose cache add spec ejs@*
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'ejs@*',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'ejs',
+41 silly cache add   name: 'ejs',
+41 silly cache add   rawSpec: '*',
+41 silly cache add   spec: '*',
+41 silly cache add   type: 'range' }
+42 silly addNamed ejs@*
+43 verbose addNamed "*" is a valid semver range for ejs
+44 silly addNameRange { name: 'ejs', range: '*', hasData: false }
+45 silly mapToRegistry name ejs
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'ejs',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'ejs',
+48 silly mapToRegistry   name: 'ejs',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/ejs
+50 verbose addNameRange registry:https://registry.npmjs.org/ejs not in flight; fetching
+51 verbose get https://registry.npmjs.org/ejs not expired, no request
+52 silly addNameRange number 2 { name: 'ejs', range: '*', hasData: true }
+53 silly addNameRange versions [ 'ejs',
+53 silly addNameRange   [ '0.0.1',
+53 silly addNameRange     '0.0.2',
+53 silly addNameRange     '0.0.3',
+53 silly addNameRange     '0.0.4',
+53 silly addNameRange     '0.1.0',
+53 silly addNameRange     '0.2.0',
+53 silly addNameRange     '0.2.1',
+53 silly addNameRange     '0.3.0',
+53 silly addNameRange     '0.3.1',
+53 silly addNameRange     '0.4.0',
+53 silly addNameRange     '0.4.1',
+53 silly addNameRange     '0.4.2',
+53 silly addNameRange     '0.4.3',
+53 silly addNameRange     '0.5.0',
+53 silly addNameRange     '0.6.0',
+53 silly addNameRange     '0.6.1',
+53 silly addNameRange     '0.7.0',
+53 silly addNameRange     '0.7.1',
+53 silly addNameRange     '0.7.2',
+53 silly addNameRange     '0.8.0',
+53 silly addNameRange     '0.8.1',
+53 silly addNameRange     '0.8.2',
+53 silly addNameRange     '0.8.3',
+53 silly addNameRange     '0.8.4',
+53 silly addNameRange     '0.8.5',
+53 silly addNameRange     '0.8.6',
+53 silly addNameRange     '0.8.8',
+53 silly addNameRange     '1.0.0',
+53 silly addNameRange     '2.0.2',
+53 silly addNameRange     '2.0.3',
+53 silly addNameRange     '2.0.4',
+53 silly addNameRange     '2.0.5',
+53 silly addNameRange     '2.0.6',
+53 silly addNameRange     '2.0.7',
+53 silly addNameRange     '2.0.8',
+53 silly addNameRange     '2.1.1',
+53 silly addNameRange     '2.1.2',
+53 silly addNameRange     '2.1.3',
+53 silly addNameRange     '2.1.4',
+53 silly addNameRange     '2.2.1',
+53 silly addNameRange     '2.2.2',
+53 silly addNameRange     '2.2.3',
+53 silly addNameRange     '2.2.4',
+53 silly addNameRange     '2.3.1',
+53 silly addNameRange     '2.3.2',
+53 silly addNameRange     '2.3.3',
+53 silly addNameRange     '2.3.4',
+53 silly addNameRange     '2.4.1',
+53 silly addNameRange     '2.4.2',
+53 silly addNameRange     '2.5.1',
+53 silly addNameRange     '2.5.2' ] ]
+54 silly addNamed ejs@2.5.2
+55 verbose addNamed "2.5.2" is a plain semver version for ejs
+56 silly cache afterAdd ejs@2.5.2
+57 verbose afterAdd /Users/joseph.hill/.npm/ejs/2.5.2/package/package.json not in flight; writing
+58 verbose correctMkdir /Users/joseph.hill/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /Users/joseph.hill/.npm/ejs/2.5.2/package/package.json written
+60 silly loadAllDepsIntoIdealTree Finishing
+61 silly loadIdealTree Finishing
+62 silly currentTree awesome-test2@1.0.0
+62 silly currentTree ├── async@0.2.10
+62 silly currentTree ├── colors@0.6.0-1
+62 silly currentTree ├── ejs@2.5.2
+62 silly currentTree ├── fwk@1.0.11
+62 silly currentTree ├── instagram-node@0.5.8
+62 silly currentTree └── should@0.6.3
+63 silly idealTree awesome-test2@1.0.0
+63 silly idealTree ├── async@0.2.10
+63 silly idealTree ├── colors@0.6.0-1
+63 silly idealTree ├── ejs@2.5.2
+63 silly idealTree ├── fwk@1.0.11
+63 silly idealTree ├── instagram-node@0.5.8
+63 silly idealTree └── should@0.6.3
+64 silly generateActionsToTake Starting
+65 silly install generateActionsToTake
+66 warn checkPermissions Missing write access to /Users/joseph.hill/Documents/Projects/awesome-test2/node_modules
+67 silly rollbackFailedOptional Starting
+68 silly rollbackFailedOptional Finishing
+69 silly runTopLevelLifecycles Starting
+70 silly runTopLevelLifecycles Finishing
+71 silly install printInstalled
+72 warn awesome-test2@1.0.0 No description
+73 warn awesome-test2@1.0.0 No repository field.
+74 verbose stack Error: EACCES: permission denied, access '/Users/joseph.hill/Documents/Projects/awesome-test2/node_modules'
+74 verbose stack     at Error (native)
+75 verbose cwd /Users/joseph.hill/Documents/Projects/awesome-test2
+76 error Darwin 15.6.0
+77 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "ejs" "--save"
+78 error node v6.6.0
+79 error npm  v3.10.3
+80 error path /Users/joseph.hill/Documents/Projects/awesome-test2/node_modules
+81 error code EACCES
+82 error errno -13
+83 error syscall access
+84 error Error: EACCES: permission denied, access '/Users/joseph.hill/Documents/Projects/awesome-test2/node_modules'
+84 error     at Error (native)
+84 error  { Error: EACCES: permission denied, access '/Users/joseph.hill/Documents/Projects/awesome-test2/node_modules'
+84 error     at Error (native)
+84 error   errno: -13,
+84 error   code: 'EACCES',
+84 error   syscall: 'access',
+84 error   path: '/Users/joseph.hill/Documents/Projects/awesome-test2/node_modules' }
+85 error Please try running this command again as root/Administrator.
+86 verbose exit [ -13, true ]

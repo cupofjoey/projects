@@ -1,0 +1,514 @@
+/*================================ Lesson 1*/
+
+[class="form-contact"] {
+	padding: 20px 24px;
+	background: #f4f7f8;
+}
+
+#container {
+	max-width: 500px;
+	margin: auto;
+}
+
+input[type="email"] {
+	background: #fdfee6;
+}
+
+input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+}
+
+a[target='_blank'] {
+	color: #39add1;
+	text-decoration: none;
+	border-bottom: 1px;
+}
+
+/*=================== DRY CSS*/
+
+
+
+
+[class="form-contact"] {
+	padding: 20px 24px;
+	background: #f4f7f8;
+}
+
+#container {
+	max-width: 500px;
+	margin: auto;
+}
+
+input[type="email"] {
+	background: #fdfee6;
+}
+
+
+
+a[target='_blank'] {
+	color: #39add1;
+	text-decoration: none;
+	border-bottom: 1px;
+}
+
+/*DRY Classes ---------------*/
+
+br{
+	border-radius: .5em;
+}
+
+.avatar{
+display: block;
+margin: 0 auto 2em;
+
+}
+
+.rounded{
+	border-radius: 50%;
+}
+
+.btn {
+	cursor: pointer;
+	font-size: .875em;
+	font-weight: 400;
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+
+.btn:hover{
+	opacity: .75;
+}
+
+.default {
+	background-color: #52bab3;
+
+}
+
+.error {
+	background-color: #ff784f;
+}
+
+@media (min-width: 769px) {
+	.inln{
+		width: auto;
+		display: inline-block;
+	}
+
+
+}
+
+/*Lesson 3: Combinator-------------*/
+/* > is a "Child Combinator" for direct children (img, form, things like that)*/
+
+
+
+
+br{
+	border-radius: .5em;
+}
+
+.avatar{
+display: block;
+margin: 0 auto 2em;
+
+}
+
+.rounded{
+	border-radius: 50%;
+}
+
+.btn {
+	cursor: pointer;
+	font-size: .875em;
+	font-weight: 400;
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+
+.btn:hover{
+	opacity: .75;
+}
+
+.default {
+	background-color: #52bab3;
+
+}
+
+.error {
+	background-color: #ff784f;
+}
+
+@media (min-width: 769px) {
+	.inln{
+		width: auto;
+		display: inline-block;
+	}
+
+	btn + .btn {
+		color: red;
+		left-margin: ;
+	}
+}
+ /*-------------Combinators*/
+
+ form > a{
+ 	font-size: .7em;
+ }
+
+ h1 ~ label /*This is targeting all sibling label elements that follow h1*/ {
+ 	background: tomato;
+ 	color: white;
+ 	padding: 5px;
+ }
+
+
+
+/* Things to Remember:
+ -Attribute selectyors can target an element by any of it's HTML attributes
+ -DRY
+ -We can define specific child and sibling selectors with combinators
+ -">" targets a dirct child of an element
+ /* + is an adjacent sibling combinator if something uses it it is a sibling element
+
+ /* ~ is a general sibling combinator, and it targets all siblings*/
+
+
+/*:first-child and :last-child;===================*/
+
+
+li: first-child{
+	background: #52bab3;
+	color: white;
+}
+
+
+li: last-child{
+	background: #52bab3;
+	color: white;
+	border: none;
+}
+
+/*:only-child and :empty;===================*/
+ /*:only-child targets onky child elements and empty elements*/
+
+:only-child{
+	color: #52bab3;
+	font-size: 1.5em;
+}
+
+/*no child elements call for :empty*/
+
+:empty{
+	background-color: tomato;
+}
+
+/*--------------------Substring Matching Attribute Selectors - "Begins With" and "Ends With"8:19*/
+
+
+/* Base Styles -------------------------------- */
+
+body {
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.5;
+	color: #384047;
+	padding: 10px 0 80px;
+}
+div {
+	max-width: 610px;
+	margin: auto;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+li {
+	margin-bottom: 14px;
+}
+a {
+	color: #4183c4;
+}
+
+/* Substring Matching Attribute Selectors ---- */
+
+
+a[href^="http://"]{
+	color: #52bab3;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	padding-left: 25px;
+}
+
+/*the "^" is what selects Begins With*/
+
+/*the "$" is what selects Ends With*/
+
+a[href$=".pdf"] {
+	background-image: url('../img/icn-pdf.svg')
+}
+
+a[href$=".jpg"] {
+	background-image: url('../img/icn-picture.svg')
+}
+
+a[href$=".zip"] {
+	background-image: url('../img/icn-zip.svg')
+}
+
+
+/*-----------------Substring Matching Attribute Selectors - "Contains" 6:44*/
+
+
+/*
+The “contains” substring matching attribute selector
+ targets an element containing the piece of code we 
+ define anywhere in an attribute's value.*/
+
+ a[href*="downloads"]{
+ 	color: #52bab3;
+ 	text-decoration: none;
+ 	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	padding-left: 25px;
+ }
+
+
+
+img[src*="thumb"] {
+	margin: 4px;
+	border: solid 2px;
+	width: 180px;
+	height: 140px;
+}
+
+img[src*="lake"] {
+	border-color: red;
+
+}
+
+
+/*------------------Element States Pseudo-Classes
+
+Like user-action pseudo classes, CSS has UI element 
+states pseudo-classes that let us target elements 
+based on user interaction states.*/
+
+input:focus,
+textarea:focus {
+	border-color: #53aba3;
+}
+
+
+/*Disable selectors target input elements like buttons
+that are in a disabled state*/
+
+input:disabled{
+	background: #ddd;
+
+}
+
+input[type="checkbox"]:checked + label {
+	font-weight: bold;
+}
+
+
+
+/*------------------:nth-child
+
+
+:nth-child is a powerful structural pseudo-class 
+because it targets child elements based 
+on any position inside a parent.*/
+
+li:nth-child(odd) {  /*or the argument could be even*/
+	background-color: #52bab3;
+	color: white;
+}
+
+/*The Index Numbering starts at "1"*/
+
+
+li:nth-child(an+b) {  /*or the argument could be even*/
+	background-color: #52bab3;
+	color: white;
+}
+
+/*the "n" is a counter in the cycle value of the argument
+much like i++ or i+1*/
+
+li:nth-child(3n+4){
+/*	this will be that it starts on the 4th item 
+	and will happen every 3rd element after that*/
+}
+
+li:nth-child(3n+0){
+/*we can just have 3n here. The 0 doesn't need to be here.
+also if a === b the b value doesn't have to be there 
+either*/
+
+}
+
+
+/*----------------- nth-of-type*/
+
+/*nth-of-type targets an element based on its 
+postion within a parent, but only if it's a 
+specific type of element*/
+
+div:nth-of-type(4){
+	background-color: #52bab3;
+	color: white;
+}
+/*This targets the 4th div and the argument 
+will tell where to target a specific type of 
+element*/
+
+
+div:nth-last-of-type(even){
+	background-color: #52bab3;
+	color: white;
+
+
+
+/*----------------- :root and :target*/
+
+/*In this video, we'll cover the :root and :target 
+pseudo-classes. :root selects the highest-level 
+parent element in a document, and :target selects 
+an element when it's the target of a link.*/
+
+
+:root {
+	background: #e3effb;
+}
+
+/*:root has more specificity than target html*/
+
+:target{
+	background: #384047;
+	color: white;
+}
+
+#col-c:target{
+	background-color: #eff1f2;
+	color: initial;
+	box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+
+/*----------------- :not() - The Negation Pseudo-Class*/
+
+/*Selecs everything except the element that we specify*/
+
+div:not(#col-a) {
+	border: solid 1px red;
+
+}
+
+
+div:not([type="submit"]) {
+	box-shadow: 0 2px 0 rgba(0,0,0, .15);
+
+}
+
+.col:not(:first-child),
+nav a:not(:first-child) {
+	margin-left: 15px;
+
+}
+
+/*-------------------------Pseudo-Elements - ::first-line
+& ::first-letter*/
+
+
+/*The ::first-line and ::first-letter pseudo-elements 
+let us target the first line of text and the 
+first character in a line of text.*/
+
+.intro::first-line {
+font-weight: bold;
+font-size: 1.4em;
+
+}
+
+.intro::first-letter {
+float:left;
+font-size: 80px;
+color: white;
+padding: 5px 10px;
+background: #384047;
+margin: 10px 10px 0 0;
+border-radius: 5px;
+line-height: 1;
+}
+
+
+/*-----------------Pseudo Elements- ::before and ::after*/
+
+/*content is always in conjunction with these*/
+
+.jpg::before{
+	content:: url(../img/icn-picture.svg);
+	font-size: 8px;
+}
+
+.zip::before{
+	content: url(../img/icn-picture.svg);
+	font-size: 8px;
+}
+
+
+/*attr()*/
+
+
+.d-loads a::after {
+	content: attr(title);
+	display: inline-block;
+	color:initial;
+	font-size: .65em;
+	margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

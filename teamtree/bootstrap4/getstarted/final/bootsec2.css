@@ -1,0 +1,156 @@
+/*Notes for Bootstrap Course*/
+/*Containers are the most basic method used in BS
+BS is developed to be mobile first
+Small range is 34 em
+Medium is 48 em
+Large is 64 em
+
+-------------- Grid Layout -------------------
+
+3 Components in Grid
+
+Containers Rows and Columns
+
+Row are horizontal columns
+
+Columns are children of Rows
+
+
+When a container is fluid, there is no max width
+
+Fixed width has a max width, and info is centered
+
+Apply padding using spacing utility classes
+
+e.g p-t (padding top)
+m-b-2 (margin bottom)
+
+Bootstrap is on a 12 col grid, 12 vertical columns in a row
+
+Number at end of col will be how wide the row spans
+
+Grid Size Prefixs
+
+-5 grid tiers for BS
+	-.col-xs (xtra small)
+	-.col-xl( big ass screens)
+
+
+	---------------- Column Ordering and Offsetting------------
+
+Column Ordering Class is done by "push" and "pull "
+
+col-lg-push-4 or col-lg-pull-4
+
+
+Responsive Utility
+
+"Down" hides element from element and below
+"Up" hides element from element and above
+
+
+
+
+--------------- Building a Navbar ----------------
+
+you can create a navbar outside of the containter to 
+stretch edge to edge
+
+You can use "Tabs" for tabbed look 
+
+Pill shape links are "nav-pills"
+
+"Navbar" is a wrapper that can include a search bar
+You can fix a nav bar a class "navbar-fixed-top"
+
+
+--------------- Jumbotron Container ----------------
+
+You can even have Fluid Jumbotron with jumbotron-fluid
+
+Text-sm-center can center the text
+
+
+---------------- Button and Button Group -------------
+
+Call out buttons baby!
+
+btn-info-outline
+
+m-y-3 for top margin class
+
+2 em margin on top = m-t-2
+
+
+----------------- Footer Nav ------------------
+
+
+row p-y-1
+col-md-7 
+
+split buttons are selected by clicking, not hovering
+
+
+
+
+----------------- Content with Cards -------------
+
+
+You can do Card Groups, Decks, or masonry style column layouts
+
+You can do a custom grid
+
+col-md-6
+
+There's also an Image Caps option for this type of display
+
+
+---------------- List Groups ---------------
+
+List groups are flexible UI components for displaying both simple
+can complex lists of elements. you can convert a simple
+HTML list into something more visually interesting. 
+
+class="list-group-item";
+
+
+---------------- Forms -------------------
+
+.form-group and .form-control used the most. .form-group works with fieldsets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

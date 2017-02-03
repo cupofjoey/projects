@@ -1,0 +1,21 @@
+{
+  "name": "awesome-test3",
+  "version": "1.0.0",
+  "description": "My third attempt at a friggin node proj",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "instagram"
+  ],
+  "author": "Joe Hill",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "instagram-node": "^0.5.8"
+  }
+}

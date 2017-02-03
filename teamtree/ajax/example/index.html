@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <title>AJAX with JavaScript</title>
+  <script>
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function(){
+    if(xhr.readyState === 4) {
+      document.geltElementById('ajax').innerHTML = xhr.responseText;
+    }
+  };
+  xhr.open('GET', 'sidebar.html');//this could be a file in a server somewhere//
+  function sendAJAX(){
+     xhr.send();
+     document.getElementById('load').style.display = "none";
+  }
+  
+  </script>
+</head>
+<body>
+  <div class="grid-container centered">
+    <div class="grid-100">
+      <div class="contained">
+        <div class="grid-100">
+          <div class="heading">
+            <h1>Bring on the AJAX</h1>
+            <button id="load" onclick="sendAJAX()">Bring it!</button>
+          </div>
+          <div id="ajax">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!-- Post vs Get
+
+Only use this if you want to get something from a server, like information e.g. Tweets
+
+Post: use if you're sending data that's going to be saved.  -->
+
+<!-- we're after dynamic or changing information
+
+you need to send the server info if you wnat to get info from them. 
+
+the data in a query string is used to search a database or server for the information that you need
+
+Query strings can be made up of one or more name/value pairs
+
+Query strings can hold multiple name/value pairs
+
+&(%26) Space(+) +(%2B) all have meaning in the query string
+
+url-encode-decode.com is a good place to check this out -->
+<!-- 
+The GET method is a good way to send info to a server. IE can only handle 2083 characters in a query string
+
+That's why we can use Post. Post won't expose the data in a query string like GET will
+
+Post sends data in the body of the request 
+you can send more info as well but you need to set up a specific header -->
+<!-- 
+After you send an AJAX request, your callback function waits for a response, typically a text response
+
+You can use AJAX to request a static file
+
+YOu should have a structured data format for responses from the server. 
+
+You can use XML (extensible markup language) or JSON (JavaScript Object Notation) to keep track of this data
+
+XML is like HTML
+
+<contacts>
+  <contact>
+    <name>Andrew</name>
+    <phone>503-555-1212</phone>
+  </contact>
+  <contact>
+    <name>Jim</name>
+    <phone>615-555-1212</phone>
+  </contact>
+</contacts>
+
+Most server side languages handle XML well -->
+
+<!-- Same Origin Policy
+
+ways to circumvent
+
+-Web Proxy
+  -use Ruby or PHP to talk to a proxy
+
+  -JSONP - JSON with Padding
+
+  a CDN will allow you to go to another server desipite having a different source
+
+  CORS- Cross-Origin Resource Sharing
+
+  -Allows server to accept request from other domains
+
+  -AJAX doesn't work unless you have a web server. Local Hosts won't work -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
